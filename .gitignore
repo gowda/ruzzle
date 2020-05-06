@@ -1,0 +1,5 @@
+# bundler
+/vendor/bundle
+
+# emacs backup files
+*~

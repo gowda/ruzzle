@@ -1,0 +1,37 @@
+# See https://github.com/rubocop-hq/rubocop/blob/master/manual/configuration.md
+AllCops:
+  Exclude:
+    - '.git/**/*'
+    - 'vendor/**/*'
+    - 'bin/**/*'
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: false
+Lint/RaiseException:
+  Enabled: true
+Lint/StructNewOverride:
+  Enabled: true
+Style/ExponentialNotation:
+  Enabled: true
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
+Layout/LineLength:
+  IgnoredPatterns: ['\A\s*#']
+Style/Documentation:
+  Enabled: false
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+Metrics/MethodLength:
+  Exclude:
+    - 'tests/**/*_test.rb'
+Naming/MethodParameterName:
+  AllowedNames:
+    - 'r'
+    - 'c'
+    - 'w'
+Metrics/AbcSize:
+  Exclude:
+    - 'tests/**/*_test.rb'
